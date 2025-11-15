@@ -181,10 +181,10 @@ $allPresent = $true
 
 foreach ($lib in $expectedLibraries) {
     if ($actualValue -like "*$lib*") {
-        Write-Host "  $lib is present"
+        Write-Host "$lib is present"
     }
     else {
-        Write-Host "  $lib is MISSING"
+        Write-Host "$lib is MISSING"
         $allPresent = $false
     }
 }
@@ -203,10 +203,10 @@ $expectedExtensions = @("azure_ai", "pg_diskann", "vector", "age", "azure_storag
 
 foreach ($ext in $expectedExtensions) {
     if ($actualExtensions -like "*$ext*") {
-        Write-Host "  $ext is present"
+        Write-Host "$ext is present"
     }
     else {
-        Write-Host "  $ext is MISSING"
+        Write-Host "$ext is MISSING"
         $allPresent = $false
     }
 }
